@@ -62,7 +62,7 @@ hr {
 <br>
 <div class="yt_ALL">
     <!-- USAS-12 Gaming YT -->
-    <div class="yt_USAS">
+    <div id="yt_USAS">
         <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/usas-12_pfp.jpeg" id="userImage">
         <h2>USAS-12 Gaming YT</h2>
         <a href="https://www.youtube.com/channel/UCjKw6USYW4FunFy6lC57IVQ?sub_confirmation=1" target="_blank">
@@ -78,7 +78,7 @@ hr {
         <hr>
     </div>
     <!-- NAMERIO -->
-    <div class="yt_NAMERIO">
+    <div id="yt_NAMERIO">
         <br>
         <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/namerio_pfp.jpeg" id="userImage">
         <h2>NAMERIO</h2>
@@ -100,7 +100,7 @@ hr {
         <hr>
     </div>
     <!-- SURVIVING DIEPER -->
-    <div class="yt_DIEPER">
+    <div id="yt_DIEPER">
         <br>
         <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/surviving-dieper_pfp.jpeg" id="userImage">
         <h2>Surviving Dieper</h2>
@@ -137,9 +137,9 @@ hr {
     
     // If the random number is 1, execute this code
     if (randomNumber === "1") {
-        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
-        let namerio = document.querySelector("div[class='yt_NAMERIO'");
-        let usas = document.querySelector("div[class='yt_USAS'");
+        let survivingDieper = document.querySelector("#yt_DIEPER");
+        let namerio = document.querySelector("#yt_NAMERIO");
+        let usas = document.querySelector("#yt_USAS");
         
         // Change order of elements
         survivingDieper.style.order = "1";
@@ -149,9 +149,9 @@ hr {
     
     // If the random number is 2, execute this code
     if (randomNumber === "2") {
-        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
-        let namerio = document.querySelector("div[class='yt_NAMERIO'");
-        let usas = document.querySelector("div[class='yt_USAS'");
+        let survivingDieper = document.querySelector("#yt_DIEPER");
+        let namerio = document.querySelector("#yt_NAMERIO");
+        let usas = document.querySelector("#yt_USAS");
         
         // Change order of elements
         survivingDieper.style.order = "2";
@@ -161,9 +161,9 @@ hr {
     
     // If the random number is 3, execute this code
     if (randomNumber === "3") {
-        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
-        let namerio = document.querySelector("div[class='yt_NAMERIO'");
-        let usas = document.querySelector("div[class='yt_USAS'");
+        let survivingDieper = document.querySelector("#yt_DIEPER");
+        let namerio = document.querySelector("#yt_NAMERIO");
+        let usas = document.querySelector("#yt_USAS");
         
         // Change order of elements
         survivingDieper.style.order = "3";
