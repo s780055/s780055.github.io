@@ -7,6 +7,10 @@
 body {
     background-color: #236ee8;
 }
+    
+div.yt_ALL {
+    display: flex;
+}
 
 img#userImage {
     height: 100px;
@@ -60,63 +64,65 @@ hr {
 <h2>Our YouTube Channels:</h2>
 <hr>
 <br>
-<!-- USAS-12 Gaming YT -->
-<div class="yt_USAS">
-    <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/usas-12_pfp.jpeg" id="userImage">
-    <h2>USAS-12 Gaming YT</h2>
-    <a href="https://www.youtube.com/channel/UCjKw6USYW4FunFy6lC57IVQ?sub_confirmation=1" target="_blank">
-    <button id="youtube_USAS"><i class="fa-brands fa-youtube"></i>Subscribe to my channel</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://www.discord.com/channels/@me" target="_blank">
-    <button id="discord_USAS">Chat with me on Discord: USAS-12 Gaming YT#1180</button>
-    </a>
-    <br>
-    <br>
-    <hr>
-</div>
-<!-- NAMERIO -->
-<div class="yt_NAMERIO">
-    <br>
-    <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/namerio_pfp.jpeg" id="userImage">
-    <h2>NAMERIO</h2>
-    <a href="https://www.youtube.com/channel/UCcDDWcT_5OUfvDKHk6lkmGQ?sub_confirmation=1" target="_blank">
-    <button id="youtube_NAMER">Subscribe to my channel</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://www.discord.gg/FChDv8bNnA" target="_blank">
-    <button id="server_NAMER">Join the Discord Server</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://www.discord.com/channels/@me" target="_blank">
-    <button id="discord_NAMER">Chat with me on Discord: NAMERIO#5436</button>
-    </a>
-    <br>
-    <br>
-    <hr>
-</div>
-<!-- SURVIVING DIEPER -->
-<div class="yt_DIEPER">
-    <br>
-    <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/surviving-dieper_pfp.jpeg" id="userImage">
-    <h2>Surviving Dieper</h2>
-    <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A?sub_confirmation=1" target="_blank">
-    <button id="youtube_SURVIV">Subscribe to my channel</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://www.discord.gg/ZGF5jsNX2E" target="_blank">
-    <button id="server_SURVIV">Join the Discord Server</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://www.discord.com/channels/@me" target="_blank">
-    <button id="discord_SURVIV">Chat with me on Discord: Dieper#3750</button>
-    </a>
-    <hr>
+<div class="yt_ALL">
+    <!-- USAS-12 Gaming YT -->
+    <div class="yt_USAS">
+        <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/usas-12_pfp.jpeg" id="userImage">
+        <h2>USAS-12 Gaming YT</h2>
+        <a href="https://www.youtube.com/channel/UCjKw6USYW4FunFy6lC57IVQ?sub_confirmation=1" target="_blank">
+        <button id="youtube_USAS"><i class="fa-brands fa-youtube"></i>Subscribe to my channel</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.com/channels/@me" target="_blank">
+        <button id="discord_USAS">Chat with me on Discord: USAS-12 Gaming YT#1180</button>
+        </a>
+        <br>
+        <br>
+        <hr>
+    </div>
+    <!-- NAMERIO -->
+    <div class="yt_NAMERIO">
+        <br>
+        <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/namerio_pfp.jpeg" id="userImage">
+        <h2>NAMERIO</h2>
+        <a href="https://www.youtube.com/channel/UCcDDWcT_5OUfvDKHk6lkmGQ?sub_confirmation=1" target="_blank">
+        <button id="youtube_NAMER">Subscribe to my channel</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.gg/FChDv8bNnA" target="_blank">
+        <button id="server_NAMER">Join the Discord Server</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.com/channels/@me" target="_blank">
+        <button id="discord_NAMER">Chat with me on Discord: NAMERIO#5436</button>
+        </a>
+        <br>
+        <br>
+        <hr>
+    </div>
+    <!-- SURVIVING DIEPER -->
+    <div class="yt_DIEPER">
+        <br>
+        <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/surviving-dieper_pfp.jpeg" id="userImage">
+        <h2>Surviving Dieper</h2>
+        <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A?sub_confirmation=1" target="_blank">
+        <button id="youtube_SURVIV">Subscribe to my channel</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.gg/ZGF5jsNX2E" target="_blank">
+        <button id="server_SURVIV">Join the Discord Server</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.com/channels/@me" target="_blank">
+        <button id="discord_SURVIV">Chat with me on Discord: Dieper#3750</button>
+        </a>
+        <hr>
+    </div>
 </div>
 <!-- CREDITS -->
 <div class="credits">
@@ -127,5 +133,45 @@ hr {
 </div>
 <!-- CLOSING CENTER TAG -->
 </center>
+<script>
+    const numbers = ["1", "2", "3"];
+    let randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+    
+    // If the random number is 1, execute this code
+    if (randomNumber === "1") {
+        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
+        let namerio = document.querySelector("div[class='yt_NAMERIO'");
+        let usas = document.querySelector("div[class='yt_USAS'");
+        
+        // Change order of elements
+        survivingDieper.style.order = "1";
+        namerio.style.order = "2";
+        usas.style.order = "3";
+    };
+    
+    // If the random number is 2, execute this code
+    if (randomNumber === "2") {
+        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
+        let namerio = document.querySelector("div[class='yt_NAMERIO'");
+        let usas = document.querySelector("div[class='yt_USAS'");
+        
+        // Change order of elements
+        survivingDieper.style.order = "2";
+        namerio.style.order = "3";
+        usas.style.order = "1";
+    };
+    
+    // If the random number is 3, execute this code
+    if (randomNumber === "3") {
+        let survivingDieper = document.querySelector("div[class='yt_DIEPER'");
+        let namerio = document.querySelector("div[class='yt_NAMERIO'");
+        let usas = document.querySelector("div[class='yt_USAS'");
+        
+        // Change order of elements
+        survivingDieper.style.order = "3";
+        namerio.style.order = "1";
+        usas.style.order = "2";
+    };
+</script>
 </body>
 </html>
