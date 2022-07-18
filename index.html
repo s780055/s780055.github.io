@@ -10,8 +10,11 @@ body {
 }
     
 div.yt_ALL {
-    position: flex;
-    /* display: flex; */   
+    position: sticky;
+}
+    
+div#blank_div {
+    display: none;    
 }
 
 img#userImage {
@@ -68,6 +71,7 @@ hr {
 <hr>
 <br>
 <div class="yt_ALL">
+    <div id="blank_div"></div>
     <!-- USAS-12 Gaming YT -->
     <div id="yt_USAS">
         <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/usas-12_pfp.jpeg" id="userImage">
@@ -155,66 +159,67 @@ hr {
 <!-- CLOSING CENTER TAG -->
 </center>
 <script>
-    const numbers = ["1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4"];
+    const numbers = ["1", "2", "3", "4"];
     let randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-    
-    alert(parseInt(randomNumber));
     
     // If the random number is 1, execute this code
     if (randomNumber === "1") {
+        let blankDiv = document.querySelector("#blank_div");
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
         let ave0 = document.querySelector("#yt_AVE0");
         
-        // Change order of elements
-        survivingDieper.style.order = parseInt("1");
-        namerio.style.order = parseInt("2");
-        usas.style.order = parseInt("3");
-        ave0.style.order = parseInt("4");
+        // Change order of elements (jQuery)
+        $(survivingDieper).remove().insertAfter($(blankDiv));
         $(namerio).remove().insertAfter($(survivingDieper));
+        $(usas).remove().insertAfter($(namerio));
+        $(ave0).remove().insertAfter($(usas));
     };
     
     // If the random number is 2, execute this code
     if (randomNumber === "2") {
+        let blankDiv = document.querySelector("#blank_div");
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
         let ave0 = document.querySelector("#yt_AVE0");
         
-        // Change order of elements
-        survivingDieper.style.order = parseInt("2");
-        namerio.style.order = parseInt("3");
-        usas.style.order = parseInt("4");
-        ave0.style.order = parseInt("1");
+        // Change order of elements (jQuery)
+        $(ave0).remove().insertAfter($(blankDiv));
+        $(survivingDieper).remove().insertAfter($(ave0));
+        $(namerio).remove().insertAfter($(survivingDieper));
+        $(usas).remove().insertAfter($(namerio));
     };
     
     // If the random number is 3, execute this code
     if (randomNumber === "3") {
+        let blankDiv = document.querySelector("#blank_div");
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
         let ave0 = document.querySelector("#yt_AVE0");
         
-        // Change order of elements
-        survivingDieper.style.order = parseInt("3");
-        namerio.style.order = parseInt("4");
-        usas.style.order = parseInt("1");
-        ave0.style.order = parseInt("2");
+        // Change order of elements (jQuery)
+        $(usas).remove().insertAfter($(blankDiv));
+        $(ave0).remove().insertAfter($(usas));
+        $(survivingDieper).remove().insertAfter($(ave0));
+        $(namerio).remove().insertAfter($(survivingDieper));
     };
     
     // If the random number is 4, execute this code
     if (randomNumber === "4") {
+        let blankDiv = document.querySelector("#blank_div");
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
         let ave0 = document.querySelector("#yt_AVE0");
         
-        // Change order of elements
-        survivingDieper.style.order = parseInt("4");
-        namerio.style.order = parseInt("1");
-        usas.style.order = parseInt("2");
-        ave0.style.order = parseInt("3");
+        // Change order of elements (jQuery)
+        $(namerio).remove().insertAfter($(blankDiv));
+        $(usas).remove().insertAfter($(namerio));
+        $(ave0).remove().insertAfter($(usas));
+        $(survivingDieper).remove().insertAfter($(ave0));
     };
 </script>
 </body>
