@@ -26,6 +26,7 @@ h2 {
 
 button {
     cursor: pointer;
+    border: none;
     height: 50px;
     width: 250px;
     font-weight: bolder;
@@ -124,6 +125,23 @@ hr {
         </a>
         <hr>
     </div>
+    <!-- AVE0 A®©IST -->
+    <div id="yt_AVE0">
+        <br>
+        <img src="https://raw.githubusercontent.com/s780055/s780055.github.io/main/ave0_pfp.jpeg" id="userImage">
+        <h2>Ave0 a®©ist</h2>
+        <a href="https://www.youtube.com/channel/UCR3B_pE3sB8Y0iauoZXGZTA?sub_confirmation=1" target="_blank">
+        <button id="youtube_AVE0">Subscribe to my channel</button>
+        </a>
+        <br>
+        <br>
+        <a href="https://www.discord.com/channels/@me" target="_blank">
+        <button id="discord_AVE0">Chat with me on Discord: Ave0 a®©ist#6969</button>
+        </a>
+        <br>
+        <br>
+        <hr>
+    </div>
 </div>
 <!-- CREDITS -->
 <div class="credits">
@@ -131,25 +149,28 @@ hr {
     <h2>Idea - <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A" target="_blank">Surviving Dieper</a></h2>
     <h2>HTML - <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A" target="_blank">Surviving Dieper</a></h2>
     <h2>CSS - <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A" target="_blank">Surviving Dieper</a></h2>
+    <h2>JAVASCRIPT - <a href="https://www.youtube.com/channel/UC6iax9HcekqOAMCz5Akua9A" target="_blank">Surviving Dieper</a></h2>
 </div>
 <!-- CLOSING CENTER TAG -->
 </center>
 <script>
-    const numbers = ["1", "2", "3", "1", "2", "3", "1", "2", "3", "1", "2", "3"];
+    const numbers = ["1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4"];
     let randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
     
-    alert(randomNumber);
+    alert(parseInt(randomNumber));
     
     // If the random number is 1, execute this code
     if (randomNumber === "1") {
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
+        let ave0 = document.querySelector("#yt_AVE0");
         
         // Change order of elements
-        survivingDieper.style.order = "1";
-        namerio.style.order = "2";
-        usas.style.order = "3";
+        survivingDieper.style.order = parseInt("1");
+        namerio.style.order = parseInt("2");
+        usas.style.order = parseInt("3");
+        ave0.style.order = parseInt("4");
     };
     
     // If the random number is 2, execute this code
@@ -157,11 +178,13 @@ hr {
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
+        let ave0 = document.querySelector("#yt_AVE0");
         
         // Change order of elements
-        survivingDieper.style.order = "2";
-        namerio.style.order = "3";
-        usas.style.order = "1";
+        survivingDieper.style.order = parseInt("2");
+        namerio.style.order = parseInt("3");
+        usas.style.order = parseInt("4");
+        ave0.style.order = parseInt("1");
     };
     
     // If the random number is 3, execute this code
@@ -169,11 +192,27 @@ hr {
         let survivingDieper = document.querySelector("#yt_DIEPER");
         let namerio = document.querySelector("#yt_NAMERIO");
         let usas = document.querySelector("#yt_USAS");
+        let ave0 = document.querySelector("#yt_AVE0");
         
         // Change order of elements
-        survivingDieper.style.order = "3";
-        namerio.style.order = "1";
-        usas.style.order = "2";
+        survivingDieper.style.order = parseInt("3");
+        namerio.style.order = parseInt("4");
+        usas.style.order = parseInt("1");
+        ave0.style.order = parseInt("2");
+    };
+    
+    // If the random number is 4, execute this code
+    if (randomNumber === "4") {
+        let survivingDieper = document.querySelector("#yt_DIEPER");
+        let namerio = document.querySelector("#yt_NAMERIO");
+        let usas = document.querySelector("#yt_USAS");
+        let ave0 = document.querySelector("#yt_AVE0");
+        
+        // Change order of elements
+        survivingDieper.style.order = parseInt("4");
+        namerio.style.order = parseInt("1");
+        usas.style.order = parseInt("2");
+        ave0.style.order = parseInt("3");
     };
 </script>
 </body>
